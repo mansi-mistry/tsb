@@ -128,7 +128,10 @@ h1 {
 
 @media (max-width: 768px) {
   .about-heading {
-    font-size: 30px;  /* mobile */
+    font-size: 30px;  
+    white-space: normal; 
+    transform: translate(0, -50%); 
+    text-align: center;
   }
 }
 
