@@ -111,14 +111,13 @@ h1 {
 }
 
 .about-img img {
-  max-width: 85%; 
+  max-width: 90%; 
   height: auto;
   margin-bottom: 20px;
 }
 
 .about-heading {
   position: absolute;
-  white-space: nowrap;
   top: 0px;
   font-size: 50px;
   color: #FF69B4;
@@ -131,7 +130,8 @@ h1 {
     font-size: 30px;  
     white-space: normal; 
     transform: translate(0, -50%); 
-    text-align: center;
+    text-align: right;
+    word-break: break-word;
   }
 }
 
