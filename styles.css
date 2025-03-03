@@ -97,8 +97,8 @@ h1 {
 
 
 #services img {
-  position: relative;
-  width: 80%;
+  width: 80%; 
+  object-fit: cover; 
 }
 
 /* ABOUT */
