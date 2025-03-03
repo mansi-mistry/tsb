@@ -98,8 +98,7 @@ h1 {
 
 #services img {
   position: relative;
-  width: auto;
-  height: 400px;
+  width: 80%;
 }
 
 /* ABOUT */
