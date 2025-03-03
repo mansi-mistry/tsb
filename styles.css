@@ -135,7 +135,7 @@ h1 {
   .about-heading {
     font-size: 30px;  
     white-space: normal; 
-    transform: translate(0, -50%); 
+    transform: translate(40, -50%); 
     text-align: right;
     word-break: break-word;
   }
