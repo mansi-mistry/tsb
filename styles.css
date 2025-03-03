@@ -19,13 +19,6 @@ h1 {
 
 .navbar-nav .nav-link {
     color: #262626;  
-    display: flex; 
-    flex-wrap: nowrap;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .navbar-nav .nav-link:hover {
@@ -43,6 +36,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) { 
+    .intro-section {
+        min-height: 60vh; 
+        margin-top: 100px; 
+        margin-bottom: 60px; 
+    }
 }
 
 .intro-img {
