@@ -2,7 +2,25 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 250;
     color: #262626;
-    /* background-color: #F2F2F2; */
+    background: linear-gradient(135deg, #FFFFFF 60%, #F2F2F2);
+    background-attachment: fixed; 
+    position: relative; 
+}
+
+/* grainy effect from https://ibelick.com/blog/create-grainy-backgrounds-with-css */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 182px;
+    opacity: 0.3;
+    pointer-events: none; 
+    z-index: -1; 
 }
 
 h1 {
@@ -98,7 +116,7 @@ h1 {
 
 #services img {
   width: 90%; 
-  height: 90%; 
+  height: 98%; 
 }
 
 @media (max-width: 768px) {
@@ -138,6 +156,7 @@ h1 {
     white-space: normal; 
     transform: translate(0, -50%); 
     text-align: right;
+    word-break: break-word;
   }
 }
 
